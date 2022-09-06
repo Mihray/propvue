@@ -1,9 +1,9 @@
 <template>
     <div> 
-        <h3>{{title1}}</h3>
-        <h3>wowow--{{box}}</h3>
+        <!-- <h3>{{title1}}</h3>
+        <h3>000--{{box}}</h3> -->
         <h3>{{post.title}}</h3>
-        <button v-on:click="$emit('enlarge-text')">
+        <button v-on:click="$emit('enlarge-text',0.1)">
             Enlarge text
         </button>
         
@@ -14,7 +14,7 @@ export default {
     data(){
 
     },
-    props:['title1','box','post'],
+    props:['title1','box','post']
 }
 </script>
 <style scoped>
